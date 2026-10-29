@@ -15,6 +15,7 @@
   --steel: #9ba4a8;
   --signal: #de4f10;
   --signal-ink: #a83a08;
+  --signal-on-ink: #ef7038;
   --line: rgba(34, 38, 42, 0.16);
   --line-2: rgba(34, 38, 42, 0.09);
   --line-ink: rgba(233, 233, 228, 0.18);
@@ -203,15 +204,15 @@ section[id] { scroll-margin-top: 92px; }
 /* ============ борт (пин-сцена) ============ */
 .bed { background: var(--ink); color: var(--concrete); border-top: 1px solid var(--ink); }
 .bed__head { padding-top: var(--sect); padding-bottom: clamp(14px, 2vw, 28px); }
-.bed__head .micro { color: var(--signal); }
+.bed__head .micro { color: var(--signal-on-ink); }
 .bed__grid { display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: clamp(16px, 2.6vw, 44px); align-items: center; }
 .bed--pin .bed__grid { min-height: 100vh; align-content: center; }
 .bed--manual .bed__grid { padding-bottom: var(--sect); }
 .bed__svg { width: 100%; height: auto; display: block; }
 .bed__side { display: grid; gap: 14px; align-content: start; }
-.bed__step { font-size: var(--fs-12); letter-spacing: 0.14em; color: var(--signal); font-weight: 600; }
+.bed__step { font-size: var(--fs-12); letter-spacing: 0.14em; color: var(--signal-on-ink); font-weight: 600; }
 .bed__meter { font-family: var(--f-display); font-weight: 700; font-size: clamp(2.6rem, 5vw, 4.4rem); line-height: 0.95; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
-.bed__meter small { font-size: 0.36em; letter-spacing: 0; margin-left: 6px; color: var(--signal); }
+.bed__meter small { font-size: 0.36em; letter-spacing: 0; margin-left: 6px; color: var(--signal-on-ink); }
 .bed__side p { color: rgba(233, 233, 228, 0.76); font-size: var(--fs-17); line-height: 1.5; max-width: 32ch; min-height: 6.5em; }
 .bed__list { display: grid; border-top: 1px solid var(--line-ink); margin-top: 4px; }
 .bed__list div {
@@ -221,7 +222,7 @@ section[id] { scroll-margin-top: 92px; }
   transition: color .24s;
 }
 .bed__list div.on { color: var(--concrete); }
-.bed__list div.on b { color: var(--signal); font-weight: 600; }
+.bed__list div.on b { color: var(--signal-on-ink); font-weight: 600; }
 .bed__list b { font-weight: 400; }
 @media (max-width: 980px) { .bed__grid { grid-template-columns: 1fr; } .bed__side { padding-bottom: 8px; } }
 
@@ -256,7 +257,7 @@ section[id] { scroll-margin-top: 92px; }
 
 /* ============ заявка ============ */
 .ask { background: var(--ink); color: var(--concrete); }
-.ask .micro { color: var(--signal); }
+.ask .micro { color: var(--signal-on-ink); }
 .ask__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(24px, 4vw, 70px); }
 .ask h2 { color: var(--concrete); }
 .ask__phone {
