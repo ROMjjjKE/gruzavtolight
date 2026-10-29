@@ -32,6 +32,8 @@ export default function Hero() {
           <figure className="hero__shot" style={{ margin: 0 }}>
             <img
               src="/gruzavtolight/img/bort-pilomaterial.jpg"
+              srcSet="/gruzavtolight/img/bort-pilomaterial-640.jpg 640w, /gruzavtolight/img/bort-pilomaterial.jpg 920w"
+              sizes="(max-width: 900px) 92vw, 46vw"
               width={920}
               height={455}
               alt="Бортовой автомобиль загружен пакетом пиломатериала, груз закреплён оранжевой стяжной стропой"
