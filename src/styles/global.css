@@ -286,8 +286,8 @@ section[id] { scroll-margin-top: 92px; }
 .half > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 .bad input, .bad select { border-bottom-color: #ef8a63; }
 .err { color: #f3a184; font-size: var(--fs-14); }
-.ask .btn { background: var(--signal); border-color: var(--signal); color: #fff; }
-.ask .btn:hover { background: #f0631f; border-color: #f0631f; }
+.ask .btn { background: #c9470c; border-color: #c9470c; color: #fff; }
+.ask .btn:hover { background: #de4f10; border-color: #de4f10; }
 .ask__ok { border-left: 2px solid var(--signal); padding: 12px 16px; font-size: var(--fs-14); line-height: 1.55; color: rgba(233, 233, 228, 0.86); }
 .ask__fine { font-size: var(--fs-14); line-height: 1.55; color: rgba(233, 233, 228, 0.58); max-width: 54ch; }
 @media (max-width: 860px) { .ask__grid { grid-template-columns: 1fr; } .half { grid-template-columns: 1fr; } }
